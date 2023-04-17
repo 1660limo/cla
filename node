@@ -8,7 +8,7 @@ external-controller: '0.0.0.0:9090'
 secret: ''
 proxies:
   -
-    name: 洛杉矶1
+    name: 'Los 1'
     type: vmess
     server: flos.ydnode.us
     port: 80
@@ -24,7 +24,7 @@ proxies:
       path: /v2ray
       headers: { Host: flos.ydnode.us }
   -
-    name: 洛杉矶2
+    name: 'Los 2'
     type: vmess
     server: flos1.ydnode.us
     port: 80
@@ -40,9 +40,9 @@ proxies:
       path: /v2ray
       headers: { Host: flos1.ydnode.us }
   -
-    name: 洛杉矶2
+    name: 'Los 3'
     type: vmess
-    server: flos1.ydnode.us
+    server: flos2.ydnode.us
     port: 80
     uuid: bfe9d835-7129-3e10-aa29-10776cde1b03
     alterId: 0
@@ -51,10 +51,10 @@ proxies:
     network: ws
     ws-path: /v2ray
     ws-headers:
-      Host: flos1.ydnode.us
+      Host: flos2.ydnode.us
     ws-opts:
       path: /v2ray
-      headers: { Host: flos1.ydnode.us }
+      headers: { Host: flos2.ydnode.us }
   -
     name: 免费订阅以公众号更新为准！
     type: trojan
@@ -74,8 +74,9 @@ proxy-groups:
     name: 🔰国外流量
     type: select
     proxies:
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
       - 🚀直接连接
@@ -90,8 +91,9 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
   -
@@ -99,8 +101,9 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
   -
@@ -108,8 +111,9 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
   -
@@ -117,8 +121,9 @@ proxy-groups:
     type: select
     proxies:
       - 🚀直接连接
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
   -
@@ -126,8 +131,9 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
   -
