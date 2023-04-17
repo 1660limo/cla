@@ -1,9 +1,3 @@
-#!MANAGED-CONFIG http://frnode.ydblog.us/link/nm7PYGEppDEmtwyM?clash=1
-
-#---------------------------------------------------#
-## 上次更新于：2023-04-17 02:23:10
-#---------------------------------------------------#
-
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -14,11 +8,11 @@ external-controller: '0.0.0.0:9090'
 secret: ''
 proxies:
   -
-    name: 洛杉矶1
+    name: 'Los 1'
     type: vmess
     server: flos.ydnode.us
     port: 80
-    uuid: bfe9d835-7129-3e10-aa29-10776cde1b03
+    uuid: db0af0f2-a278-3019-9ef8-f064d7a0726c
     alterId: 0
     cipher: auto
     udp: true
@@ -30,11 +24,11 @@ proxies:
       path: /v2ray
       headers: { Host: flos.ydnode.us }
   -
-    name: 洛杉矶2
+    name: 'Los 2'
     type: vmess
     server: flos1.ydnode.us
     port: 80
-    uuid: bfe9d835-7129-3e10-aa29-10776cde1b03
+    uuid: db0af0f2-a278-3019-9ef8-f064d7a0726c
     alterId: 0
     cipher: auto
     udp: true
@@ -46,42 +40,60 @@ proxies:
       path: /v2ray
       headers: { Host: flos1.ydnode.us }
   -
-    name: 洛杉矶2
+    name: 'Los 3'
     type: vmess
-    server: flos1.ydnode.us
+    server: flos2.ydnode.us
     port: 80
-    uuid: bfe9d835-7129-3e10-aa29-10776cde1b03
+    uuid: db0af0f2-a278-3019-9ef8-f064d7a0726c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /v2ray
     ws-headers:
-      Host: flos1.ydnode.us
+      Host: flos2.ydnode.us
     ws-opts:
       path: /v2ray
-      headers: { Host: flos1.ydnode.us }
+      headers: { Host: flos2.ydnode.us }
+  -
+    name: 'Los 3-1'
+    type: vmess
+    server: flos2.ydnode.us
+    port: 90
+    uuid: db0af0f2-a278-3019-9ef8-f064d7a0726c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers:
+      Host: flos2.ydnode.us
+    ws-opts:
+      path: /v2ray
+      headers: { Host: flos2.ydnode.us }
   -
     name: 免费订阅以公众号更新为准！
     type: trojan
     server: 0.0.0.0
     port: 443
-    password: bfe9d835-7129-3e10-aa29-10776cde1b03
+    password: db0af0f2-a278-3019-9ef8-f064d7a0726c
     sni: 0.0.0.0
   -
     name: 官网：daow.us
     type: trojan
     server: 0.0.0.0
     port: 443
-    password: bfe9d835-7129-3e10-aa29-10776cde1b03
+    password: db0af0f2-a278-3019-9ef8-f064d7a0726c
     sni: 0.0.0.0
 proxy-groups:
   -
     name: 🔰国外流量
     type: select
     proxies:
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
+      - 'Los 3-1'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
       - 🚀直接连接
@@ -96,8 +108,10 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
+      - 'Los 3-1'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
   -
@@ -105,8 +119,10 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
+      - 'Los 3-1'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
   -
@@ -114,8 +130,10 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
+      - 'Los 3-1'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
   -
@@ -123,8 +141,10 @@ proxy-groups:
     type: select
     proxies:
       - 🚀直接连接
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
+      - 'Los 3-1'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
   -
@@ -132,8 +152,10 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 洛杉矶1
-      - 洛杉矶2
+      - 'Los 1'
+      - 'Los 2'
+      - 'Los 3'
+      - 'Los 3-1'
       - 免费订阅以公众号更新为准！
       - 官网：daow.us
   -
