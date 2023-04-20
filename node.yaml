@@ -59,7 +59,7 @@ proxies:
     name: 'Los 3-1'
     type: vmess
     server: flos2.ydnode.us
-    port: 90
+    port: 8080
     uuid: db0af0f2-a278-3019-9ef8-f064d7a0726c
     alterId: 0
     cipher: auto
